@@ -38,4 +38,19 @@ collections:
     fields:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'page'}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}    
+      - {label: "Body", name: "body", widget: "markdown"}
+  - label: Navigation
+    name: navigation
+    editor:
+      preview: false
+    files:
+    - label: 'Navigation'
+      name: 'navigation'
+      file: '_data/navigation.yml'
+      fields:
+        - label: 'Navigation Items'
+          name: 'items'
+          widget: 'list'
+          fields:
+            - { label: Name, name: name, widget: string }
+            - { label: Link, name: link, widget: string }
